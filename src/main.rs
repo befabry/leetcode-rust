@@ -1,0 +1,15 @@
+mod prefixes_div_by5;
+mod two_sum;
+
+use prefixes_div_by5::prefixes_div_by5;
+use two_sum::two_sum;
+
+fn main() {
+    println!("{:?}", two_sum(vec![2, 7, 11, 15], 9)); // [0,1]
+    println!("{:?}", two_sum(vec![3, 2, 4], 6)); // [1,2]
+    println!("{:?}", two_sum(vec![3, 3], 6)); // [0,1]
+
+    println!("{:?}", prefixes_div_by5(vec![0, 1, 1])); // [true, false, false]
+    println!("{:?}", prefixes_div_by5(vec![1, 1, 1])); // [false, false, false]
+    println!("{:?}", prefixes_div_by5(vec![0, 1, 1, 1, 1, 1])); // [true, false, false, false, true, false]
+}
