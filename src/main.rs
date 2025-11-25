@@ -1,6 +1,8 @@
+mod is_palindrome;
 mod prefixes_div_by5;
 mod two_sum;
 
+use is_palindrome::is_palindrome;
 use prefixes_div_by5::prefixes_div_by5;
 use two_sum::two_sum;
 
@@ -12,4 +14,7 @@ fn main() {
     println!("{:?}", prefixes_div_by5(vec![0, 1, 1])); // [true, false, false]
     println!("{:?}", prefixes_div_by5(vec![1, 1, 1])); // [false, false, false]
     println!("{:?}", prefixes_div_by5(vec![0, 1, 1, 1, 1, 1])); // [true, false, false, false, true, false]
+
+    println!("{:?}", is_palindrome(12121)); // true
+    println!("{:?}", is_palindrome(123)); // false
 }
