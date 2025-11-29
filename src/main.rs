@@ -1,10 +1,12 @@
 mod is_palindrome;
+mod is_parenthesis_valid;
 mod longest_common_prefix;
 mod prefixes_div_by5;
 mod roman_to_int;
 mod two_sum;
 
 use is_palindrome::is_palindrome;
+use is_parenthesis_valid::is_parenthesis_valid;
 use longest_common_prefix::longest_common_prefix;
 use prefixes_div_by5::prefixes_div_by5;
 use roman_to_int::roman_to_int;
@@ -34,4 +36,6 @@ fn main() {
             String::from("flor")
         ])
     ); // flo
+
+    println!("{:?}", is_parenthesis_valid(String::from("([)]")))
 }
