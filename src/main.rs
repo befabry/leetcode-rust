@@ -3,6 +3,7 @@ mod is_parenthesis_valid;
 mod longest_common_prefix;
 mod merge_two_lists;
 mod prefixes_div_by5;
+mod remove_duplicates;
 mod roman_to_int;
 mod two_sum;
 
@@ -11,6 +12,7 @@ use is_parenthesis_valid::is_parenthesis_valid;
 use longest_common_prefix::longest_common_prefix;
 use merge_two_lists::{ListNode, merge_two_lists};
 use prefixes_div_by5::prefixes_div_by5;
+use remove_duplicates::remove_duplicates;
 use roman_to_int::roman_to_int;
 use two_sum::two_sum;
 
@@ -58,4 +60,6 @@ fn main() {
     });
 
     println!("{:?}", merge_two_lists(Some(list1), Some(list2)));
+
+    println!("{:?}", remove_duplicates(&mut vec![1, 1, 2])); // 2
 }
