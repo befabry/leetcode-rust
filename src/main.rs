@@ -1,20 +1,6 @@
-mod is_palindrome;
-mod is_parenthesis_valid;
-mod longest_common_prefix;
-mod merge_two_lists;
-mod prefixes_div_by5;
-mod remove_duplicates;
-mod roman_to_int;
-mod two_sum;
+mod leetcode;
 
-use is_palindrome::is_palindrome;
-use is_parenthesis_valid::is_parenthesis_valid;
-use longest_common_prefix::longest_common_prefix;
-use merge_two_lists::{ListNode, merge_two_lists};
-use prefixes_div_by5::prefixes_div_by5;
-use remove_duplicates::remove_duplicates;
-use roman_to_int::roman_to_int;
-use two_sum::two_sum;
+use leetcode::*;
 
 fn main() {
     println!("{:?}", two_sum(vec![2, 7, 11, 15], 9)); // [0,1]
