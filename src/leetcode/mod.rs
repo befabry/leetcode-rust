@@ -1,3 +1,4 @@
+pub mod count_partitions;
 pub mod is_palindrome;
 pub mod is_parenthesis_valid;
 pub mod longest_common_prefix;
@@ -7,6 +8,7 @@ pub mod remove_duplicates;
 pub mod roman_to_int;
 pub mod two_sum;
 
+pub use count_partitions::count_partitions;
 pub use is_palindrome::is_palindrome;
 pub use is_parenthesis_valid::is_parenthesis_valid;
 pub use longest_common_prefix::longest_common_prefix;

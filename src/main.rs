@@ -48,4 +48,6 @@ fn main() {
     println!("{:?}", merge_two_lists(Some(list1), Some(list2)));
 
     println!("{:?}", remove_duplicates(&mut vec![1, 1, 2])); // 2
+
+    println!("{:?}", count_partitions(vec![10, 10, 3, 7, 6]));
 }
